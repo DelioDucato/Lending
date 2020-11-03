@@ -1,0 +1,278 @@
+{
+  "contractName": "IAlphaReceiver",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "receiveAlpha",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.11+commit.5ef660b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"receiveAlpha\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Alpha*\",\"kind\":\"dev\",\"methods\":{\"receiveAlpha(uint256)\":{\"params\":{\"_amount\":\"the amount of Alpha token to receive\"}}},\"title\":\"Alpha receiver interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"receiveAlpha(uint256)\":{\"notice\":\"receive Alpha token from the distributor\"}},\"notice\":\"The interface of Alpha token reward receiver\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Lending-Development/Lending/contracts/interfaces/IAlphaReceiver.sol\":\"IAlphaReceiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Lending-Development/Lending/contracts/interfaces/IAlphaReceiver.sol\":{\"keccak256\":\"0x8a337173709f92f85bf62155407e38524169d537bff506151d8c963f5f6412b9\",\"urls\":[\"bzz-raw://c01d97b37c98214123bcc033728a1a72fe75e5739544dd79de50709471c6e15c\",\"dweb:/ipfs/QmPSWxMqzFaa5BC2bqGuX1g8xrG5rWYwS91YMDnJYdDCJg\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.6.11;\r\n\r\n/**\r\n * @title Alpha receiver interface\r\n * @notice The interface of Alpha token reward receiver\r\n * @author Alpha\r\n **/\r\n\r\ninterface IAlphaReceiver {\r\n  /**\r\n   * @notice receive Alpha token from the distributor\r\n   * @param _amount the amount of Alpha token to receive\r\n   */\r\n  function receiveAlpha(uint256 _amount) external;\r\n}\r\n",
+  "sourcePath": "D:\\Lending-Development\\Lending\\contracts\\interfaces\\IAlphaReceiver.sol",
+  "ast": {
+    "absolutePath": "/D/Lending-Development/Lending/contracts/interfaces/IAlphaReceiver.sol",
+    "exportedSymbols": {
+      "IAlphaReceiver": [
+        5245
+      ]
+    },
+    "id": 5246,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5237,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5238,
+          "nodeType": "StructuredDocumentation",
+          "src": "29:120:15",
+          "text": " @title Alpha receiver interface\n @notice The interface of Alpha token reward receiver\n @author Alpha*"
+        },
+        "fullyImplemented": false,
+        "id": 5245,
+        "linearizedBaseContracts": [
+          5245
+        ],
+        "name": "IAlphaReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 5239,
+              "nodeType": "StructuredDocumentation",
+              "src": "183:123:15",
+              "text": " @notice receive Alpha token from the distributor\n @param _amount the amount of Alpha token to receive"
+            },
+            "functionSelector": "0ceab4f7",
+            "id": 5244,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "receiveAlpha",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5241,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5244,
+                  "src": "332:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5240,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "331:17:15"
+            },
+            "returnParameters": {
+              "id": 5243,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "357:0:15"
+            },
+            "scope": 5245,
+            "src": "310:48:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5246,
+        "src": "153:208:15"
+      }
+    ],
+    "src": "0:363:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/Lending-Development/Lending/contracts/interfaces/IAlphaReceiver.sol",
+    "exportedSymbols": {
+      "IAlphaReceiver": [
+        5245
+      ]
+    },
+    "id": 5246,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5237,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5238,
+          "nodeType": "StructuredDocumentation",
+          "src": "29:120:15",
+          "text": " @title Alpha receiver interface\n @notice The interface of Alpha token reward receiver\n @author Alpha*"
+        },
+        "fullyImplemented": false,
+        "id": 5245,
+        "linearizedBaseContracts": [
+          5245
+        ],
+        "name": "IAlphaReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 5239,
+              "nodeType": "StructuredDocumentation",
+              "src": "183:123:15",
+              "text": " @notice receive Alpha token from the distributor\n @param _amount the amount of Alpha token to receive"
+            },
+            "functionSelector": "0ceab4f7",
+            "id": 5244,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "receiveAlpha",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5241,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5244,
+                  "src": "332:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5240,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "331:17:15"
+            },
+            "returnParameters": {
+              "id": 5243,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "357:0:15"
+            },
+            "scope": 5245,
+            "src": "310:48:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5246,
+        "src": "153:208:15"
+      }
+    ],
+    "src": "0:363:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2020-11-03T00:52:35.770Z",
+  "devdoc": {
+    "author": "Alpha*",
+    "kind": "dev",
+    "methods": {
+      "receiveAlpha(uint256)": {
+        "params": {
+          "_amount": "the amount of Alpha token to receive"
+        }
+      }
+    },
+    "title": "Alpha receiver interface",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "receiveAlpha(uint256)": {
+        "notice": "receive Alpha token from the distributor"
+      }
+    },
+    "notice": "The interface of Alpha token reward receiver",
+    "version": 1
+  }
+}

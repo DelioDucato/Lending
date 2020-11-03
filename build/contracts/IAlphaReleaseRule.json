@@ -1,0 +1,407 @@
+{
+  "contractName": "IAlphaReleaseRule",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fromBlock",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_toBlock",
+          "type": "uint256"
+        }
+      ],
+      "name": "getReleaseAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.11+commit.5ef660b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fromBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_toBlock\",\"type\":\"uint256\"}],\"name\":\"getReleaseAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Alpha*\",\"kind\":\"dev\",\"methods\":{\"getReleaseAmount(uint256,uint256)\":{\"params\":{\"_fromBlock\":\"the start block to release Alpha token\",\"_toBlock\":\"the end block to release Alpha token\"},\"returns\":{\"_0\":\"the amount od Alpha token to release\"}}},\"title\":\"Alpha release rule\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getReleaseAmount(uint256,uint256)\":{\"notice\":\"get the Alpha token release amount from _fromBlock to _toBlock\"}},\"notice\":\"The interface of Alpha release rule\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Lending-Development/Lending/contracts/interfaces/IAlphaReleaseRule.sol\":\"IAlphaReleaseRule\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Lending-Development/Lending/contracts/interfaces/IAlphaReleaseRule.sol\":{\"keccak256\":\"0x9630026015344952fcc6717c5a4b3c2df4aa79b33deb137a5f7daf78e664fb8e\",\"urls\":[\"bzz-raw://4210f998bfb3d31372a8d4d9b12daa83016fd1102862900ebd32743c2ca9dbde\",\"dweb:/ipfs/Qmba4J79wG6fZiEGJrs2GXToFDxLjuiDrHcrwuKYNxTYSN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.6.11;\r\n\r\n/**\r\n * @title Alpha release rule\r\n * @notice The interface of Alpha release rule\r\n * @author Alpha\r\n **/\r\n\r\ninterface IAlphaReleaseRule {\r\n  /**\r\n   * @notice get the Alpha token release amount from _fromBlock to _toBlock\r\n   * @param _fromBlock the start block to release Alpha token\r\n   * @param _toBlock the end block to release Alpha token\r\n   * @return the amount od Alpha token to release\r\n   */\r\n  function getReleaseAmount(uint256 _fromBlock, uint256 _toBlock) external view returns (uint256);\r\n}\r\n",
+  "sourcePath": "D:\\Lending-Development\\Lending\\contracts\\interfaces\\IAlphaReleaseRule.sol",
+  "ast": {
+    "absolutePath": "/D/Lending-Development/Lending/contracts/interfaces/IAlphaReleaseRule.sol",
+    "exportedSymbols": {
+      "IAlphaReleaseRule": [
+        5259
+      ]
+    },
+    "id": 5260,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5247,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5248,
+          "nodeType": "StructuredDocumentation",
+          "src": "29:105:16",
+          "text": " @title Alpha release rule\n @notice The interface of Alpha release rule\n @author Alpha*"
+        },
+        "fullyImplemented": false,
+        "id": 5259,
+        "linearizedBaseContracts": [
+          5259
+        ],
+        "name": "IAlphaReleaseRule",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 5249,
+              "nodeType": "StructuredDocumentation",
+              "src": "171:260:16",
+              "text": " @notice get the Alpha token release amount from _fromBlock to _toBlock\n @param _fromBlock the start block to release Alpha token\n @param _toBlock the end block to release Alpha token\n @return the amount od Alpha token to release"
+            },
+            "functionSelector": "3e503e51",
+            "id": 5258,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReleaseAmount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5254,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5251,
+                  "mutability": "mutable",
+                  "name": "_fromBlock",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5258,
+                  "src": "461:18:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5250,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5253,
+                  "mutability": "mutable",
+                  "name": "_toBlock",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5258,
+                  "src": "481:16:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5252,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:38:16"
+            },
+            "returnParameters": {
+              "id": 5257,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5256,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5258,
+                  "src": "522:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5255,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "521:9:16"
+            },
+            "scope": 5259,
+            "src": "435:96:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5260,
+        "src": "138:396:16"
+      }
+    ],
+    "src": "0:536:16"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/Lending-Development/Lending/contracts/interfaces/IAlphaReleaseRule.sol",
+    "exportedSymbols": {
+      "IAlphaReleaseRule": [
+        5259
+      ]
+    },
+    "id": 5260,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5247,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5248,
+          "nodeType": "StructuredDocumentation",
+          "src": "29:105:16",
+          "text": " @title Alpha release rule\n @notice The interface of Alpha release rule\n @author Alpha*"
+        },
+        "fullyImplemented": false,
+        "id": 5259,
+        "linearizedBaseContracts": [
+          5259
+        ],
+        "name": "IAlphaReleaseRule",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 5249,
+              "nodeType": "StructuredDocumentation",
+              "src": "171:260:16",
+              "text": " @notice get the Alpha token release amount from _fromBlock to _toBlock\n @param _fromBlock the start block to release Alpha token\n @param _toBlock the end block to release Alpha token\n @return the amount od Alpha token to release"
+            },
+            "functionSelector": "3e503e51",
+            "id": 5258,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReleaseAmount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5254,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5251,
+                  "mutability": "mutable",
+                  "name": "_fromBlock",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5258,
+                  "src": "461:18:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5250,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5253,
+                  "mutability": "mutable",
+                  "name": "_toBlock",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5258,
+                  "src": "481:16:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5252,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:38:16"
+            },
+            "returnParameters": {
+              "id": 5257,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5256,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5258,
+                  "src": "522:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5255,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "521:9:16"
+            },
+            "scope": 5259,
+            "src": "435:96:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5260,
+        "src": "138:396:16"
+      }
+    ],
+    "src": "0:536:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2020-11-03T00:52:35.771Z",
+  "devdoc": {
+    "author": "Alpha*",
+    "kind": "dev",
+    "methods": {
+      "getReleaseAmount(uint256,uint256)": {
+        "params": {
+          "_fromBlock": "the start block to release Alpha token",
+          "_toBlock": "the end block to release Alpha token"
+        },
+        "returns": {
+          "_0": "the amount od Alpha token to release"
+        }
+      }
+    },
+    "title": "Alpha release rule",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getReleaseAmount(uint256,uint256)": {
+        "notice": "get the Alpha token release amount from _fromBlock to _toBlock"
+      }
+    },
+    "notice": "The interface of Alpha release rule",
+    "version": 1
+  }
+}

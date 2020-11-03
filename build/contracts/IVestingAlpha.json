@@ -1,0 +1,339 @@
+{
+  "contractName": "IVestingAlpha",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "accumulateAlphaToUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.11+commit.5ef660b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"accumulateAlphaToUser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Alpha\",\"kind\":\"dev\",\"methods\":{\"accumulateAlphaToUser(address,uint256)\":{\"details\":\"accumulate Alpha token to user\",\"params\":{\"_amount\":\"the amount of Alpha token to accumulate\",\"_user\":\"the user account address\"}}},\"title\":\"Alpha vesting interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"The interface for the alpha vesting contract.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Lending-Development/Lending/contracts/interfaces/IVestingAlpha.sol\":\"IVestingAlpha\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Lending-Development/Lending/contracts/interfaces/IVestingAlpha.sol\":{\"keccak256\":\"0x11f777023d2fbf61aa8e5e61eb727764b10d3e7ae685f4ff71ac76f51009499d\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://9e8d7a74f740052fb2e64fca9db069cffcef07204884feeba928d94e76a38127\",\"dweb:/ipfs/QmWUMd7bZixitUraXPQHNda25tsRzFwUj8mdiso8Gr71vi\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Apache-2.0\r\npragma solidity >=0.6.11;\r\n\r\n/**\r\n * @title Alpha vesting interface\r\n * @notice The interface for the alpha vesting contract.\r\n * @author Alpha\r\n */\r\n\r\ninterface IVestingAlpha {\r\n\r\n  /**\r\n   * @dev accumulate Alpha token to user\r\n   * @param _user the user account address\r\n   * @param _amount the amount of Alpha token to accumulate\r\n   */\r\n  function accumulateAlphaToUser(address _user, uint256 _amount) external;\r\n}\r\n",
+  "sourcePath": "D:\\Lending-Development\\Lending\\contracts\\interfaces\\IVestingAlpha.sol",
+  "ast": {
+    "absolutePath": "/D/Lending-Development/Lending/contracts/interfaces/IVestingAlpha.sol",
+    "exportedSymbols": {
+      "IVestingAlpha": [
+        5412
+      ]
+    },
+    "id": 5413,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5402,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:25:22"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5403,
+          "nodeType": "StructuredDocumentation",
+          "src": "69:119:22",
+          "text": " @title Alpha vesting interface\n @notice The interface for the alpha vesting contract.\n @author Alpha"
+        },
+        "fullyImplemented": false,
+        "id": 5412,
+        "linearizedBaseContracts": [
+          5412
+        ],
+        "name": "IVestingAlpha",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 5404,
+              "nodeType": "StructuredDocumentation",
+              "src": "223:157:22",
+              "text": " @dev accumulate Alpha token to user\n @param _user the user account address\n @param _amount the amount of Alpha token to accumulate"
+            },
+            "functionSelector": "b73480bf",
+            "id": 5411,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "accumulateAlphaToUser",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5409,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5406,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5411,
+                  "src": "415:13:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5405,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "415:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5408,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5411,
+                  "src": "430:15:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5407,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "414:32:22"
+            },
+            "returnParameters": {
+              "id": 5410,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "455:0:22"
+            },
+            "scope": 5412,
+            "src": "384:72:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5413,
+        "src": "192:267:22"
+      }
+    ],
+    "src": "40:421:22"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/Lending-Development/Lending/contracts/interfaces/IVestingAlpha.sol",
+    "exportedSymbols": {
+      "IVestingAlpha": [
+        5412
+      ]
+    },
+    "id": 5413,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5402,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:25:22"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5403,
+          "nodeType": "StructuredDocumentation",
+          "src": "69:119:22",
+          "text": " @title Alpha vesting interface\n @notice The interface for the alpha vesting contract.\n @author Alpha"
+        },
+        "fullyImplemented": false,
+        "id": 5412,
+        "linearizedBaseContracts": [
+          5412
+        ],
+        "name": "IVestingAlpha",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 5404,
+              "nodeType": "StructuredDocumentation",
+              "src": "223:157:22",
+              "text": " @dev accumulate Alpha token to user\n @param _user the user account address\n @param _amount the amount of Alpha token to accumulate"
+            },
+            "functionSelector": "b73480bf",
+            "id": 5411,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "accumulateAlphaToUser",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5409,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5406,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5411,
+                  "src": "415:13:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5405,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "415:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5408,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5411,
+                  "src": "430:15:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5407,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "414:32:22"
+            },
+            "returnParameters": {
+              "id": 5410,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "455:0:22"
+            },
+            "scope": 5412,
+            "src": "384:72:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5413,
+        "src": "192:267:22"
+      }
+    ],
+    "src": "40:421:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.11+commit.5ef660b1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2020-11-03T00:52:35.775Z",
+  "devdoc": {
+    "author": "Alpha",
+    "kind": "dev",
+    "methods": {
+      "accumulateAlphaToUser(address,uint256)": {
+        "details": "accumulate Alpha token to user",
+        "params": {
+          "_amount": "the amount of Alpha token to accumulate",
+          "_user": "the user account address"
+        }
+      }
+    },
+    "title": "Alpha vesting interface",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "The interface for the alpha vesting contract.",
+    "version": 1
+  }
+}
